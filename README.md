@@ -59,7 +59,20 @@ src/
             └── repository/
                 └── StudentRepository.java
 ```
-<img width="1894" height="1062" alt="get-all" src="https://github.com/user-attachments/assets/f1bee2bb-a692-40bb-ba11-306fb20c1b5a" />
+
+
+
+<img width="1919" height="850" alt="delete" src="https://github.com/user-attachments/assets/730241c9-654e-4773-bb1c-6bb155cec88b" />
+
+<img width="1908" height="1068" alt="database" src="https://github.com/user-attachments/assets/f0717c2e-fb99-4f33-b382-03d35b95cea0" />
+
+
+
+<img wi<img width="1883" height="1055" alt="post" src="https://github.com/user-attachments/assets/81c9997d-ab9f-4865-9a38-5f80d5c6ca4c" />
+dth=<img width="1894" height="1062" alt="get-all" src="https://github.com/user-attachments/assets/032eefab-85f5-47a8-b114-c3cd7ceb7d8f" />
+"1886" height="1069" alt="get" src="https://github.com/user-attachments/assets/19674c67-bcba-4fb8-a683-ee4675a9b005" />
+
+
 
 ---
 
@@ -77,7 +90,8 @@ Ensure the following are installed:
 ```bash
 git clone <repository-url>
 cd student-management-api
-./mvnw spring-boot:run
+./mvnw sprin<img width="1887" height="1063" alt="put" src="https://github.com/user-attachments/assets/b8922500-0634-4d90-a47c-669bf644a1bf" />
+g-boot:run
 ```
 
 The server will start at:
