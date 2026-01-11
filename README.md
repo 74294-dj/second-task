@@ -1,0 +1,132 @@
+# Student Management REST API with Spring Boot
+
+This project is a beginner-friendly **RESTful API** built using **Java** and **Spring Boot**. It demonstrates the core principles of REST architecture by implementing basic **CRUD operations** for managing students. The project is designed to help beginners understand how to structure, build, and test REST APIs using Spring Boot.
+
+---
+
+## 🎓 Project Overview
+
+The **Student Management API** allows users to:
+
+* Add new students
+* View all students or a single student
+* Update student details
+* Remove students from the system
+
+It uses an **H2 in-memory database**, making it lightweight and easy to run without additional setup.
+
+---
+
+## 📦 Features
+
+* ✅ Create new students
+* 🔍 Retrieve single or multiple students
+* ✏️ Update existing student records
+* ❌ Delete students
+* 💾 H2 in-memory database integration
+* 🧪 Easy testing with Postman or curl
+
+---
+
+## 🛠 Technologies Used
+
+* Java 17+
+* Spring Boot
+* Spring Web
+* Spring Data JPA
+* Maven
+* H2 Database
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+└── main/
+    └── java/com/springstarter/student_api/
+        ├── StudentApiApplication.java
+        └── student/
+            ├── api/
+            │   ├── StudentController.java
+            │   ├── request/
+            │   │   ├── StudentRequest.java
+            │   │   └── UpdateStudentRequest.java
+            │   └── response/
+            │       └── StudentResponse.java
+            ├── domain/
+            │   └── Student.java
+            └── repository/
+                └── StudentRepository.java
+```
+<img width="1894" height="1062" alt="get-all" src="https://github.com/user-attachments/assets/f1bee2bb-a692-40bb-ba11-306fb20c1b5a" />
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Ensure the following are installed:
+
+* Java 17 or higher
+* Maven
+
+### Run the Application
+
+```bash
+git clone <repository-url>
+cd student-management-api
+./mvnw spring-boot:run
+```
+
+The server will start at:
+
+```
+http://localhost:8080
+```
+
+---
+
+## 🔗 API Endpoints
+
+| Method | Endpoint       | Description                |
+| ------ | -------------- | -------------------------- |
+| GET    | /students      | Get all students           |
+| GET    | /students/{id} | Get student by ID          |
+| POST   | /students      | Create a new student       |
+| PUT    | /students/{id} | Update an existing student |
+| DELETE | /students/{id} | Delete a student           |
+
+---
+
+## 🗃 Database Access (H2 Console)
+
+The application uses an H2 in-memory database.
+
+Access it at:
+
+```
+http://localhost:8080/h2-console
+```
+
+**JDBC URL:** `jdbc:h2:mem:testdb`
+**Username:** `sa`
+**Password:** *(leave blank)*
+
+---
+
+## 🧪 Testing Example
+
+**POST /students**
+
+```json
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "course": "Computer Science"
+}
+```
+
+---
+
