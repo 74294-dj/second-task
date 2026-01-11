@@ -1,103 +1,146 @@
-# First REST API with Spring Boot
+# Student Management REST API with Spring Boot
 
-This project is a beginner-friendly RESTful API built with **Java** and **Spring Boot**. It demonstrates the fundamental principles of REST architecture and provides basic CRUD operations on a product catalog. The goal of this project is to help newcomers understand how to create and manage REST APIs in a clean, structured manner using Spring Boot.
+This project is a beginner-friendly **RESTful API** built using **Java** and **Spring Boot**. It demonstrates the core principles of REST architecture by implementing basic **CRUD operations** for managing students. The project is designed to help beginners understand how to structure, build, and test REST APIs using Spring Boot.
+
+---
+
+## 🎓 Project Overview
+
+The **Student Management API** allows users to:
+
+* Add new students
+* View all students or a single student
+* Update student details
+* Remove students from the system
+
+It uses an **H2 in-memory database**, making it lightweight and easy to run without additional setup.
+
+---
 
 ## 📦 Features
 
-- ✅ Create new products
-- 🔍 Retrieve single or multiple products
-- ✏️ Update existing products
-- ❌ Delete products
-- 💾 Uses H2 in-memory database
-- 🧪 Easy to test with tools like Postman or curl
+* ✅ Create new students
+* 🔍 Retrieve single or multiple students
+* ✏️ Update existing student records
+* ❌ Delete students
+* 💾 H2 in-memory database integration
+* 🧪 Easy testing with Postman or curl
+
+---
 
 ## 🛠 Technologies Used
 
-- Java 17+
-- Spring Boot
-- Maven
-- H2 Database
-- Spring Web
+* Java 17+
+* Spring Boot
+* Spring Web
+* Spring Data JPA
+* Maven
+* H2 Database
+
+---
 
 ## 📁 Project Structure
 
 ```
 src/
 └── main/
-    └── java/com/springstarter/first_rest_api/
-        ├── FirstRestApiApplication.java
-        └── product/
+    └── java/com/springstarter/student_api/
+        ├── StudentApiApplication.java
+        └── student/
             ├── api/
-            │   ├── ProductController.java
+            │   ├── StudentController.java
             │   ├── request/
-            │   │   ├── ProductRequest.java
-            │   │   └── UpdateProductRequest.java
+            │   │   ├── StudentRequest.java
+            │   │   └── UpdateStudentRequest.java
             │   └── response/
-            │       └── ProductResponse.java
+            │       └── StudentResponse.java
             ├── domain/
-            │   └── Product.java
+            │   └── Student.java
             └── repository/
-                └── ProductRespository.java
+                └── StudentRepository.java
 ```
+
+
+
+<img width="1919" height="850" alt="delete" src="https://github.com/user-attachments/assets/730241c9-654e-4773-bb1c-6bb155cec88b" />
+
+<img width="1908" height="1068" alt="database" src="https://github.com/user-attachments/assets/f0717c2e-fb99-4f33-b382-03d35b95cea0" />
+
+
+
+<img wi<img width="1883" height="1055" alt="post" src="https://github.com/user-attachments/assets/81c9997d-ab9f-4865-9a38-5f80d5c6ca4c" />
+dth=<img width="1894" height="1062" alt="get-all" src="https://github.com/user-attachments/assets/032eefab-85f5-47a8-b114-c3cd7ceb7d8f" />
+"1886" height="1069" alt="get" src="https://github.com/user-attachments/assets/19674c67-bcba-4fb8-a683-ee4675a9b005" />
+
+
+
+---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-Ensure the following tools are installed:
+Ensure the following are installed:
 
-- Java 17 or higher
-- Maven
+* Java 17 or higher
+* Maven
 
 ### Run the Application
 
 ```bash
 git clone <repository-url>
-cd first-rest-api-java-master
-./mvnw spring-boot:run
+cd student-management-api
+./mvnw sprin<img width="1887" height="1063" alt="put" src="https://github.com/user-attachments/assets/b8922500-0634-4d90-a47c-669bf644a1bf" />
+g-boot:run
 ```
 
-The server will start at `http://localhost:8080`.
+The server will start at:
+
+```
+http://localhost:8080
+```
+
+---
 
 ## 🔗 API Endpoints
 
-| Method | Endpoint           | Description             |
-|--------|--------------------|-------------------------|
-| GET    | /products          | Get all products        |
-| GET    | /products/{id}     | Get product by ID       |
-| POST   | /products          | Create a new product    |
-| PUT    | /products/{id}     | Update existing product |
-| DELETE | /products/{id}     | Delete a product        |
+| Method | Endpoint       | Description                |
+| ------ | -------------- | -------------------------- |
+| GET    | /students      | Get all students           |
+| GET    | /students/{id} | Get student by ID          |
+| POST   | /students      | Create a new student       |
+| PUT    | /students/{id} | Update an existing student |
+| DELETE | /students/{id} | Delete a student           |
+
+---
 
 ## 🗃 Database Access (H2 Console)
 
-The application uses an H2 in-memory database. You can access the H2 console at:
+The application uses an H2 in-memory database.
+
+Access it at:
 
 ```
 http://localhost:8080/h2-console
 ```
 
-**JDBC URL:** `jdbc:h2:mem:testdb`  
-**Username:** `sa`  
+**JDBC URL:** `jdbc:h2:mem:testdb`
+**Username:** `sa`
 **Password:** *(leave blank)*
-
-## 📸 Screenshots
-
--![put](https://github.com/user-attachments/assets/c66c076a-3236-44a8-a586-620057826c3f)
-![post](https://github.com/user-attachments/assets/3ff00d43-402b-423c-9e7e-f1570a21a147)
-![get-all](https://github.com/user-attachments/assets/ada0d031-ab43-484a-908f-0388b6fd2ed1)
-![get](https://github.com/user-attachments/assets/0e995323-068c-457b-8035-d3381f26a52c)
-![delete](https://github.com/user-attachments/assets/15ce1df1-fe13-4d81-b06c-18a16029d7f3)
-![database](https://github.com/user-attachments/assets/e98f9e9f-6177-41bb-9f65-d945f9b0e177)
-
-
-
-
-
-## 📄 License
-
-This project is licensed under the MIT License. You are free to use, modify, and distribute this code as needed.
 
 ---
 
-Happy Coding! 🎉
+## 🧪 Testing Example
+
+**POST /students**
+
+```json
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "course": "Computer Science"
+}
+```
+
+---
+
